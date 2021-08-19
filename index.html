@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html style="background-color:green;"></html>
+<head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
+/*Loading bar by happycupcake. Give credit if used.*/
+@keyframes fakeloadinganimation{
+  0%{
+    width: 0px;
+    top: calc(50vh - 50px);
+    content: "Welcome to...";
+    transition: ease;
+    text-align: left;
+  }
+  75%{
+    width: 300px;
+    top: calc(50vh - 50px);
+    content: "Welcome to...;"
+    text-align: left;
+  }
+  75.1%{
+    width: 300px;
+    top: calc(50vh - 50px);
+    content: "Welcome to...";
+    text-align: center;
+  }
+  85%{
+    top: calc(50vh - 100px);
+    width: 300px;
+    content: "Welcome to...";
+    text-align: center;
+  }
+  100%{
+    top: calc(150vh - 50px);
+    width: 300px;
+    content: "Welcome to...";
+    text-align: center;
+  }
+}
+html::before{
+  content: "Welcome to...";
+  height: 100px;
+  position: fixed !important;
+  margin: 0px;
+  padding: 0px;
+  top: calc(150vh - 50px);
+  left: calc(50vw - 150px);
+  background-color: blue;
+  color: white !important;
+  line-height: 100px;
+  white-space: nowrap;
+  font-size: 30px !important;
+  z-index: 1000000000 !important;
+  animation: fakeloadinganimation 2s ease !important;
+  width: 300px !important;
+  border: white !important;
+  box-shadow: 0px 0px 0px 5px white, 0px 50vw 0px calc(50vw + 50vh - 50px) #ff9a00, 0px 0px 0px 5px white !important; /*The box shadow that makes the border is put before and after the background shadow, because of order issues (Firefox displays the first one on top, chrome displays the last one on top)*/
+  display: block !important;
+}
+html::after{
+  content: "Welcome to...";
+  border: white !important;
+  height: 100px;
+  width: 0px;
+  position: fixed !important;
+  margin: 0px;
+  padding: 0px;
+    top: calc(150vh - 50px);
+  left: calc(50vw - 150px);
+  background-color: blue!important;
+  color: #ff9a00;
+  line-height: 100px;
+  z-index: 1000000001 !important;
+  white-space: nowrap;
+  font-size: 30px !important;
+  animation: fakeloadinganimation 2s ease !important;
+  overflow: hidden !important;
+ }
+
+
+body{
+background: url(https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvYi9jLzVkZjFlMmIyY2MwYTk1YzRlODY1ZDRhNzQxODk2M2M0YjgyZjg5LmpwZw==&rn=NGZmMDI3OTEyODE0ODQ4ZGUwNjk4MjI4NDVhYzA1YzQuanBn
+);
+}
+
+
+
+</style>
+</head>
+<body>
+<p title = "An html file">An html file</p>
+<h1>Austin's Website</h1>
+<p>A cool image<h2>
+<img src="lightsaber.png" alt="A lightsaber" usemap="#lmap">
+
+<map name = "lmap">
+    <area shape="rect" coords="34,44,270,350" alt="Lightsaber" href="https://en.wikipedia.org/wiki/Lightsaber">
+
+
+<a href="mc.html"> Minecraft</a>
+
+<a href="music.html"> Extras</a>
+
+
+
+
+</body>
+</html>
