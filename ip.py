@@ -4,5 +4,6 @@ today = date.today()
 
 
 f = open("E.pages", "a")
-f.write("Visited on",today)
+f.write("Visited on")
+f.write(today)
 f.close()
