@@ -38,16 +38,15 @@
             // Initialize Firebase
             // TODO: Replace with your project's customized code snippet
 
-            // var postData = {
-            //     name: 'Mike',
-            //     value: '4th chat message',
-            //     created_at : Date(),
-            // };
-            // messagesRef.push().set(postData);
-            // var newPostKey = firebase.database().ref().child('messages').push().key;
-            // var updates = {};
-            // updates['/messages/'+newPostKey] = postData;
-            // firebase.database().ref().update(updates);
+             var postData = {
+                name: 'Mike',
+                created_at : Date(),
+             };
+             messagesRef.push().set(postData);
+             var newPostKey = firebase.database().ref().child('messages').push().key;
+             var updates = {};
+             updates['/messages/'+newPostKey] = postData;
+             firebase.database().ref().update(updates);
         </script>
     </body>
 </html>
