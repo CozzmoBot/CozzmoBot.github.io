@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ESOE chatroom</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/esoe/style.css">
+    </head>
+    <body >
+        <div id="app">
+            <app-header></app-header>
+            <div class="container">
+                <div class="message-board">
+                    <div class="message-block" v-for="message in messages">
+                        <span>{{ message.name }}</span>
+                        <p>{{ message.value }}</p>
+                    </div>
+                </div>
+                <section id="user-input">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <input type="type" class="form-control" id="message" placeholder="Type something">
+                        </div>
+                        <button type="submit" class="btn btn-default">送出</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script src="app.js"></script>
+        <script>
+            // Initialize Firebase
+            // TODO: Replace with your project's customized code snippet
+
+            // var postData = {
+            //     name: 'Mike',
+            //     value: '4th chat message',
+            //     created_at : Date(),
+            // };
+            // messagesRef.push().set(postData);
+            // var newPostKey = firebase.database().ref().child('messages').push().key;
+            // var updates = {};
+            // updates['/messages/'+newPostKey] = postData;
+            // firebase.database().ref().update(updates);
+        </script>
+    </body>
+</html>
