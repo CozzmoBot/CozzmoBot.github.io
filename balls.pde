@@ -137,7 +137,7 @@ class Ball
 	{
 		if (myAlpha > 0)
 		{
-			myAlpha -= 1.;
+			myAlpha += 1;
 		}
 		else
 		{
