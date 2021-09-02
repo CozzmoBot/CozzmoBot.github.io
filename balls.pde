@@ -89,8 +89,8 @@ class Ball
 		myAlpha = this.canvas.random(0,255);
 
 		// randomize our speed
-		speedX = this.canvas.random(-30, 30);
-		speedY = this.canvas.random(-30, 30);
+		speedX = this.canvas.random(-10, 10);
+		speedY = this.canvas.random(-10, 10);
 	}
 
 	// move our ball
@@ -137,7 +137,7 @@ class Ball
 	{
 		if (myAlpha > 0)
 		{
-			myAlpha += 1;
+			myAlpha -= 3;
 		}
 		else
 		{
