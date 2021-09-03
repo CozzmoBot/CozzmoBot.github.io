@@ -129,7 +129,7 @@ class Ball
 		// use our reference to the canvas to draw our ball
 		this.canvas.noStroke();
 		this.canvas.fill(myRed, myGreen, myBlue, myAlpha);
-		this.canvas.ellipse(x,  y,  size,  size);
+		this.canvas.triangle(x,  y,  size,  size);
 	}
 
 	// fade method - allows a ball to fade out of existence
