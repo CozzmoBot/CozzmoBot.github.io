@@ -2,7 +2,11 @@
 <html style="background-color:green;"></html>
 <head>
 
+  <audio controls>
 
+   <source src="DUI.mp3" type="audio/mpeg">
+
+ </audio>
 <script type="text/javascript" src="processing.js"></script>
 
 
@@ -58,7 +62,7 @@ html::before{
   white-space: nowrap;
   font-size: 30px !important;
   z-index: 1000000000 !important;
-  animation: fakeloadinganimation 2s ease !important;
+  animation: fakeloadinganimation 10s ease !important;
   width: 300px !important;
   border: white !important;
   box-shadow: 0px 0px 0px 5px white, 0px 50vw 0px calc(50vw + 50vh - 50px) #ff9a00, 0px 0px 0px 5px white !important; /*The box shadow that makes the border is put before and after the background shadow, because of order issues (Firefox displays the first one on top, chrome displays the last one on top)*/
