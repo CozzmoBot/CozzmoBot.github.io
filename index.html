@@ -133,15 +133,15 @@ function myFunction() {
 }
 </script>
 
-<center>
-    <!-- The image has scrolling behavior to left -->
+<!--<center>
+
     <marquee  behavior="scroll" direction="left">
           <img src=
 "200.gif"
           alt="rickroll">
     </marquee>
 
-   <!-- The image has scrolling behavior to the upper direction. -->
+
    <marquee  behavior="scroll" direction="up">
           <img src=
 "200.gif"
@@ -154,7 +154,16 @@ function myFunction() {
 <marquee  behavior="scroll" direction="right">
 <img src="200.gif"alt="rickroll">
 </marquee>
-</center> 
+</center> -->
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var btn = document.createElement("Marquee");
+  btn.innerHTML = "CLICK ME";
+  document.body.appendChild(btn);
+}
+</script>
 <h1>Cozzmobot.github.io</h1>
 <p>A cool image! Press on it to interact! <h2>
 <canvas data-processing-sources="balls.pde"></canvas>
