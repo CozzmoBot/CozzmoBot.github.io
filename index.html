@@ -2,11 +2,30 @@
 <html style="background-color:green;"></html>
 <head>
 
-  <audio loop controls autoplay>
+  <audio id="myAudio">
+    <source src="DUI.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-   <source src="DUI.mp3" type="audio/mpeg">
+  <p>Click the buttons to play or pause the audio.</p>
 
- </audio>
+  <button onclick="playAudio()" type="button">Connect to server</button>
+
+
+
+  <script>
+  var x = document.getElementById("myAudio");
+
+  function playAudio() {
+    x.play();
+  }
+
+  function pauseAudio() {
+    x.pause();
+  }
+  </script>
+
+
 <script type="text/javascript" src="processing.js"></script>
 
 
