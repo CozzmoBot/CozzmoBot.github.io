@@ -128,7 +128,8 @@ background: url(https://services.artofproblemsolving.com/download.php?id=YXR0YWN
 
 <script>
 function myFunction() {
-  document.body.style.backgroundImage = 200.gif;
+  var changeBG = document.getElementById("style");
+  document.getElementsByTagName("body")[0].setAttribute("style","background-image:url(200.gif)");
 }
 </script>
 <h1>Cozzmobot.github.io</h1>
