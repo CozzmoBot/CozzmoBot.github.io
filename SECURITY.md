@@ -2,7 +2,7 @@
 
 
 
-If there are any problems please note on discussion bord.
+If there are any problems please note on discussion board.
 
 | Version | Supported          |
 | ------- | ------------------ |
