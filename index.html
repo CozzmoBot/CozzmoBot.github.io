@@ -117,9 +117,26 @@ background: url(https://services.artofproblemsolving.com/download.php?id=YXR0YWN
 
 body {
     cursor: url(LS.png), default;
+
+
+
 }
 
+@keyframes weirdblur {
+  98% {
+    filter: blur(0);
+  }
+  99% {
+    filter: blur(2px)
+  };
+  100% {
+    filter: blur(0);
+  }
+}
 
+body {
+  animation: weirdblur 5s infinite;
+}
 
 
 
