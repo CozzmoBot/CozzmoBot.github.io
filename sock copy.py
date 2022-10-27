@@ -22,5 +22,3 @@ for i in range(0, 65535):
 
     else:
         continue
-        
-

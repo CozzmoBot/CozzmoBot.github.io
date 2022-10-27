@@ -1,14 +1,4 @@
-/***
-
-    P R O C E S S I N G . J S - 1.4.1
-    a port of the Processing visualization language
-
-    Processing.js is licensed under the MIT License, see LICENSE.
-    For a list of copyright holders, please refer to AUTHORS.
-
-    http://processingjs.org
-
-***/
+// This is processing! Welcome! ~Austin HACK
 
 (function(window, document, Math, undef) {
   var nop = function() {};

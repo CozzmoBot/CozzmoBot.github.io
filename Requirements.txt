@@ -1,0 +1,4 @@
+Needs:
+pgzero
+
+Actions: Pip install pgzero
