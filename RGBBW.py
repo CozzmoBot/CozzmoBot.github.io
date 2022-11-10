@@ -135,11 +135,22 @@ def gameloop():
 
             c= random.randint(0, 2)
 
-        if cardnum == 0 and computercards == 52:
-            print("The computer won!")
+        else:
+            continue
 
-        elif cardnum == 0 and playercards == 52:
+        if cardnum == 0 and computercards >= playercards:
+            print("The computer won!")
+            time.sleep(3)
+            print("Computer: 'Play again! :D'")
+            break
+
+        elif cardnum == 0 and playercards >= computercards:
             print("Yay you won!")
+            print("Computer: 'I want a rematch >:('")
+            break
+
+        else:
+            continue
 
 
 
