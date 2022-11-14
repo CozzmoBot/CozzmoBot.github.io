@@ -1,23 +1,22 @@
-#Red Green Blue Black White
 import random
 import time
-global typ, i, c, computerslap
-typ = random.randint(0,4)
+
+global typ, i, c, computer_slap
+typ = random.randint(0, 4)
 i = 0
 c = random.randrange(0, 3)
 
+
 def Card(typ):
-    typ = random.randint(0,4)
-    cardlist = ['Red', 'Green', 'Blue', 'Black', 'White']
+    typ = random.randint(0, 4)
+    cardlist = ["Red", "Green", "Blue", "Black", "White"]
     cardchosen = cardlist[typ]
     return cardchosen
 
 
-
-
 def player():
-    s= str(input("Slap? y/n"))
-    if s == 'y':
+    s = str(input("Slap? y/n"))
+    if s == "y":
         slap = True
 
     else:
@@ -25,12 +24,14 @@ def player():
 
     return slap
 
+
 def computer():
     slap = True
     return slap
 
+
 def gameloop():
-    computercards= 0
+    computercards = 0
     playercards = 0
     cardnum = 52
     cardsout = 0
@@ -41,19 +42,19 @@ def gameloop():
         cardnum -= 1
         cardsout += 1
         if i == 0:
-            cardsaid = 'Red'
+            cardsaid = "Red"
 
         elif i == 1:
-            cardsaid = 'Green'
+            cardsaid = "Green"
 
         elif i == 2:
-            cardsaid = 'Blue'
+            cardsaid = "Blue"
 
         elif i == 3:
-            cardsaid = 'Black'
+            cardsaid = "Black"
 
         elif i == 4:
-            cardsaid = 'White'
+            cardsaid = "White"
 
         elif i > 4:
             i = 0
@@ -63,13 +64,13 @@ def gameloop():
 
         card = Card(typ)
         print("The card said was", cardsaid, "The card laid down was", card)
-        time.sleep(.5)
+        time.sleep(0.5)
 
         playerslap = player()
         if card == cardsaid:
-            c= random.randint(0, 2)
+            c = random.randint(0, 2)
 
-            if c >=1:
+            if c >= 1:
                 computerslap = computer()
 
             else:
@@ -83,7 +84,6 @@ def gameloop():
                 cardsout = 0
                 time.sleep(3)
 
-
             elif playerslap == True and card == cardsaid:
                 print("You slapped")
                 print("Slapcheck")
@@ -94,20 +94,19 @@ def gameloop():
                 cardsout = 0
                 time.sleep(3)
 
-            elif  computerslap == False and playerslap == True:
+            elif computerslap == False and playerslap == True:
                 print("Missed opportunity")
                 time.sleep(3)
 
             else:
                 pass
 
-            c= random.randint(0, 2)
-
+            c = random.randint(0, 2)
 
         elif card != cardsaid:
-            c= random.randint(0, 22)
+            c = random.randint(0, 22)
 
-            if c <=1:
+            if c <= 1:
                 computerslap = computer()
 
             else:
@@ -133,7 +132,7 @@ def gameloop():
             else:
                 pass
 
-            c= random.randint(0, 2)
+            c = random.randint(0, 2)
 
         else:
             continue
@@ -153,12 +152,9 @@ def gameloop():
             continue
 
 
-
-
 #########################
 ##         end        ###
 #########################
-
 
 
 if __name__ == "__main__":
