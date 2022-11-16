@@ -41,26 +41,24 @@ def gameloop():
         i += 1
         cardnum -= 1
         cardsout += 1
-        if i == 0:
-            cardsaid = "Red"
+        match i:
+            case 0:
+                cardsaid = "Red"
 
-        elif i == 1:
-            cardsaid = "Green"
+            case 1:
+                cardsaid = "Green"
 
-        elif i == 2:
-            cardsaid = "Blue"
+            case 2:
+                cardsaid = "Blue"
 
-        elif i == 3:
-            cardsaid = "Black"
+            case 3:
+                cardsaid = "Black"
 
-        elif i == 4:
-            cardsaid = "White"
+            case 4:
+                cardsaid = "White"
 
-        elif i > 4:
-            i = 0
-
-        else:
-            print("Terminal Malfunction in code")
+            case _:
+                i = 0
 
         card = Card(typ)
         print("The card said was", cardsaid, "The card laid down was", card)

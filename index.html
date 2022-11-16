@@ -163,11 +163,35 @@ function myFunction() {
 </marquee>
 </center> -->
 
+
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+
+
+
+
+
+
+
 <h1>Cozzmobot.github.io</h1>
 <p>An interesting image! Press on it to interact! <h2>
-<canvas data-ajaxpro-sources="balls.apo"></canvas>
+<canvas data-processing-sources="balls.pde"></canvas>
 
-<h2>Made with ajaxpro.js</h2>
+<h2>Made with processing.js</h2>
 <h2>Give credit if used</h2>
 <h2> Extras! Links and another interactive picture!  </h2>
 <img src="Lightsaber.png" alt="A lightsaber" usemap="#lmap">
@@ -188,7 +212,7 @@ function myFunction() {
 <!-- <a href="chat.html" style="color:#FF0000" > Run this from terminal</a> -->
 
 <h1>A secret code! type with your keyboard to see the colors, and then decypher them!</h1>
-<canvas data-ajaxpro-sources="k.apo"></canvas>
+<canvas data-processing-sources="k.pde"></canvas>
 
 
 
@@ -205,7 +229,7 @@ function myFunction() {
 
 <h2>Fun game!</h2>
 
-<canvas data-ajaxpro-sources="boid.apo"></canvas>
+<canvas data-processing-sources="boid.pde"></canvas>
 
 
 </body>
