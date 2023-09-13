@@ -8,7 +8,6 @@ mystring = "\x00\xff\x00\xfe\x00b\x00\x00\x00\xff\x00\x00\x00\xfe\x00\x00\x00h\x
 "
 
 MESSAGE = mystring.encode("utf-8")
-print(MESSAGE)
 for i in range(0, 65535):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((TCP_IP, TCP_PORT))
